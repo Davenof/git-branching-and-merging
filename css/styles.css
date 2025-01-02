@@ -1,0 +1,117 @@
+/* Basic styling for the body to set font and background color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  
+  /* Styling for the header to set background color, text color, and padding */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  /* Styling for the navigation menu to remove bullet points and set inline display */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1em;
+  }
+  
+  /* Styling for the navigation links */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Padding for the main content section */
+  main {
+    padding: 2em;
+  }
+  
+  /* Margin for each section within the main content */
+  section {
+    margin-bottom: 2em;
+  }
+  
+  /* Styling for the footer to set background color, text color, and sticky position */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p a {
+    color: white;
+  }
+  
+  footer p a:hover {
+    text-decoration: none;
+  }
+  
+  /* Styling for the code blocks */
+  .code-container {
+    position: relative;
+    margin: 1em 0;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 3em 1em;
+    border-radius: 5px;  
+  }
+  
+  .toggle-code {
+    position: relative;
+    right: 60px;
+  }
+  
+  /* Styling for the copy button */
+  .copy-btn,
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.3em 0.6em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover,
+  .toggle-btn:hover {
+    background-color: #555;
+  }
+  
+  .toggle-btn {
+    right: 80px;
+  }
+  
+  /* Light mode styles */
+  .light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+    border: solid 1px #000;
+  }
+  
+  .light-mode .code-block {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  

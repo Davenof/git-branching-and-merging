@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branching and Merging</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Git Branching and Merging</h1>
+    <nav>
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#branching">Branching</a></li>
+        <li><a href="#merging">Merging</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Introduction</h2>
+      <p>
+        Welcome! In this session, we'll explore the concepts of Git branching and merging. 
+        Branching allows you to create separate lines of development, while merging helps you 
+        integrate changes from different branches into one. These features are essential for effective 
+        collaboration and maintaining a clean project history.
+      </p>
+    </section>
+
+    <!-- Branching Section -->
+    <section id="branching">
+      <h2>Branching</h2>
+      <p>
+        Branching in Git allows you to create independent lines of development. This is useful for 
+        working on new features, bug fixes, or experiments without affecting the main codebase. You can 
+        create a new branch with the command <code>git branch &lt;branch-name&gt;</code> and switch to 
+        it using <code>git checkout &lt;branch-name&gt;</code>.
+      </p>
+      <p>
+        Using branches helps keep your main codebase clean and stable, and allows multiple developers 
+        to work on different features simultaneously. When you're ready to integrate your changes back 
+        into the main codebase, you can merge your branch. Below is an example of creating a branch:
+      </p>
+        
+      <div class="code-container">
+        <pre id="code-block-1" class="code-block" data-lang="bash">
+          <code class="toggle-code">
+            # Create a new branch
+            git branch feature-branch
+
+            # Switch to the new branch
+            git checkout feature-branch
+          </code>
+        </pre>
+        <button class="copy-btn" aria-label="Copy to clipboard">Copy</button>
+        <button class="toggle-btn" aria-label="Toggle light/dark mode" data-mode="dark">Light Mode</button>
+      </div>
+
+      <p>
+        After creating a branch, you can work on your changes in isolation. This makes it easier 
+        to develop features and fix bugs without interfering with the main codebase.
+      </p>
+    </section>
+
+    <!-- Merging Section -->
+    <section id="merging">
+      <h2>Merging</h2>
+      <p>
+        Merging combines changes from different branches into one. This is crucial when integrating 
+        new features or bug fixes into the main codebase. The command <code>git merge &lt;branch-name&gt;</code> 
+        is used to merge changes. Sometimes, you'll need to resolve conflicts manually if changes in different 
+        branches are incompatible.
+      </p>
+      <p>
+        Conflicts occur when changes in two branches affect the same lines of code. Git will notify you of these 
+        conflicts, and you'll need to resolve them before completing the merge. This process ensures that all 
+        changes are reviewed and integrated correctly. Below is an example of merging a branch:
+      </p>
+      
+      <div class="code-container">
+        <pre id="code-block-2" class="code-block" data-lang="bash">
+          <code class="toggle-code">
+            # Switch to the master branch
+            git checkout master
+
+            # Merge the feature branch into the master branch
+            git merge feature-branch
+
+            # Resolve any conflicts if they occur
+          </code>
+        </pre>
+        <button class="copy-btn" aria-label="Copy to clipboard">Copy</button>
+        <button class="toggle-btn" aria-label="Toggle light/dark mode" data-mode="dark">Light Mode</button>
+      </div>
+
+      <p>
+        By resolving conflicts and merging changes, you ensure that your project remains up-to-date and 
+        includes the latest features and bug fixes from different contributors.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      &copy; 2025 Git Branching and Merging <br>
+      Site designed by <a href="https://www.linkedin.com/in/david-ofili-7b9a752a/" target="blank">David Ofili</a>
+    </p>
+
+  </footer>
+
+  <!-- Link to External JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
